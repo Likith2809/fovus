@@ -55,6 +55,7 @@ The React application will be accessible at `http://localhost:3000`.
 ## Testing the application :
 
 1. Add your Api Endpoint once after deployment to the react form post
+2. Upload the scr/scripts/script.sh file to the s3 bucket
 
 ## Additional Resources
 
