@@ -60,8 +60,11 @@ https://docs.aws.amazon.com/cdk/v2/guide/apps.html
 https://docs.aws.amazon.com/cdk/v2/guide/tools.html
 https://docs.aws.amazon.com/cdk/api/v1/docs/aws-lambda-readme.html
 https://docs.aws.amazon.com/cdk/v2/guide/home.html
+
 https://docs.aws.amazon.com/cdk/api/v1/docs/aws-lambda-event-sources-readme.html#dynamodb-stream
+
 https://docs.aws.amazon.com/cdk/v2/guide/permissions.html
+
 https://stackoverflow.com/
 
 ---
