@@ -1,14 +1,81 @@
-# Welcome to your CDK TypeScript project
+# CDK Deployment with TypeScript
 
-This is a blank project for CDK development with TypeScript.
+This project demonstrates a CDK deployment using TypeScript, including the configuration of various AWS services such as EC2, DynamoDB, and API Gateway. It also includes a React application for file upload to S3 and storing data in a DynamoDB table.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Prerequisites
 
-## Useful commands
+Before running the code, make sure you have the following:
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+- AWS CLI configured with the necessary credentials
+- Node.js and npm installed
+
+## Project Structure
+
+The project structure is as follows:
+.
+├── FovusLikithRamanavanithanStack/
+│   ├── src/
+│   │   ├── constructs/
+│   │   │   └── ...
+│   │   ├── lambda/
+│   │   │   ├── script/
+│   │   │   │   └── index.js
+│   │   │   └── upload/
+│   │   │       └── index.js
+│   │   ├── react-app/
+│   │   │   └── ...
+│   │   └── scripts/
+│   │       └── ...
+│   ├── package.json
+│   └── ...
+└── ...
+Copy code
+- `src/constructs`: Contains all the basic constructs including the `ScriptLambda` function and `UploadLambdaFunction`.
+- `src/lambda/script/index.js`: Contains the script Lambda function to trigger the event from DynamoDB.
+- `src/lambda/upload/index.js`: Contains the upload Lambda function to upload the form data to S3 and DynamoDB.
+- `src/react-app`: Contains the React application where the form is developed.
+- `src/scripts`: Contains the script file to run the trigger.
+
+## Running the CDK Deployment
+
+To run the CDK deployment, follow these steps:
+
+1. Navigate to the `FovusLikithRamanavanithanStack` directory:
+cd FovusLikithRamanavanithanStack
+Copy code
+2. Install the dependencies:
+npm install
+Copy code
+3. Build the project:
+npm run build
+Copy code
+4. Deploy the CDK stack:
+cdk deploy
+Copy code
+Alternatively, you can use `cdk watch` for continuous deployment.
+
+## Running the React Application
+
+To run the React application, follow these steps:
+
+1. Navigate to the `src/react-app` directory:
+cd src/react-app
+Copy code
+2. Install the dependencies:
+npm install
+Copy code
+3. Start the development server:
+npm start
+Copy code
+The React application will be accessible at `http://localhost:3000`.
+
+## Additional Resources
+
+- [AWS CDK Documentation](https://docs.aws.amazon.com/cdk/latest/guide/home.html)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [React Documentation](https://reactjs.org/docs/)
+
+---
+
+Feel free to customize the README file further based on your specific project requirements and add any additional sections or information as needed.
+This README file provides an overview of your CDK deployment with TypeScript, including the project structure, instructions for running the CDK deployment, and instructions for running the React application. It also includes links to relevant documentation for further reference.
