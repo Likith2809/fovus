@@ -9,6 +9,10 @@ Before running the code, make sure you have the following:
 - AWS CLI configured with the necessary credentials
 - Node.js and npm installed
 
+## Demo Video 
+
+https://drive.google.com/drive/folders/1aiqWRlS_AD3todJRLiXlbiz7yG0Q_nR0?usp=drive_link
+
 ## Project Structure
 
 The project structure is as follows:
