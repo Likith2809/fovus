@@ -12,24 +12,7 @@ Before running the code, make sure you have the following:
 ## Project Structure
 
 The project structure is as follows:
-.
-├── FovusLikithRamanavanithanStack/
-│   ├── src/
-│   │   ├── constructs/
-│   │   │   └── ...
-│   │   ├── lambda/
-│   │   │   ├── script/
-│   │   │   │   └── index.js
-│   │   │   └── upload/
-│   │   │       └── index.js
-│   │   ├── react-app/
-│   │   │   └── ...
-│   │   └── scripts/
-│   │       └── ...
-│   ├── package.json
-│   └── ...
-└── ...
-Copy code
+
 - `src/constructs`: Contains all the basic constructs including the `ScriptLambda` function and `UploadLambdaFunction`.
 - `src/lambda/script/index.js`: Contains the script Lambda function to trigger the event from DynamoDB.
 - `src/lambda/upload/index.js`: Contains the upload Lambda function to upload the form data to S3 and DynamoDB.
@@ -42,16 +25,16 @@ To run the CDK deployment, follow these steps:
 
 1. Navigate to the `FovusLikithRamanavanithanStack` directory:
 cd FovusLikithRamanavanithanStack
-Copy code
+
 2. Install the dependencies:
 npm install
-Copy code
+
 3. Build the project:
 npm run build
-Copy code
+
 4. Deploy the CDK stack:
 cdk deploy
-Copy code
+
 Alternatively, you can use `cdk watch` for continuous deployment.
 
 ## Running the React Application
@@ -60,13 +43,13 @@ To run the React application, follow these steps:
 
 1. Navigate to the `src/react-app` directory:
 cd src/react-app
-Copy code
+
 2. Install the dependencies:
 npm install
-Copy code
+
 3. Start the development server:
 npm start
-Copy code
+
 The React application will be accessible at `http://localhost:3000`.
 
 ## Additional Resources
